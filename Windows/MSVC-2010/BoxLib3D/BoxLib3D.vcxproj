@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4943B9BD-70FF-4C1A-9CC4-C470FAB7D263}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\NO_SEC_DEP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\NO_SEC_DEP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\NO_SEC_DEP.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\NO_SEC_DEP.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\BoxLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;BL_SPACEDIM=3;BL_FORT_USE_UPPERCASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\BoxLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;BL_SPACEDIM=3;BL_FORT_USE_UPPERCASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\BoxLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;BL_SPACEDIM=3;BL_FORT_USE_UPPERCASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\BoxLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;BL_SPACEDIM=3;BL_FORT_USE_UPPERCASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\BoxLib\Arena.H" />
+    <ClInclude Include="..\..\..\BoxLib\Array.H" />
+    <ClInclude Include="..\..\..\BoxLib\ArrayLim.H" />
+    <ClInclude Include="..\..\..\BoxLib\BArena.H" />
+    <ClInclude Include="..\..\..\BoxLib\BaseFab.H" />
+    <ClInclude Include="..\..\..\BoxLib\BLassert.H" />
+    <ClInclude Include="..\..\..\BoxLib\BLFort.H" />
+    <ClInclude Include="..\..\..\BoxLib\BLVERSION.H" />
+    <ClInclude Include="..\..\..\BoxLib\Box.H" />
+    <ClInclude Include="..\..\..\BoxLib\BoxArray.H" />
+    <ClInclude Include="..\..\..\BoxLib\BoxDomain.H" />
+    <ClInclude Include="..\..\..\BoxLib\BoxLib.H" />
+    <ClInclude Include="..\..\..\BoxLib\BoxList.H" />
+    <ClInclude Include="..\..\..\BoxLib\CArena.H" />
+    <ClInclude Include="..\..\..\BoxLib\ccse-mpi.H" />
+    <ClInclude Include="..\..\..\BoxLib\CONSTANTS.H" />
+    <ClInclude Include="..\..\..\BoxLib\DistributionMapping.H" />
+    <ClInclude Include="..\..\..\BoxLib\FabArray.H" />
+    <ClInclude Include="..\..\..\BoxLib\FabConv.H" />
+    <ClInclude Include="..\..\..\BoxLib\FArrayBox.H" />
+    <ClInclude Include="..\..\..\BoxLib\FPC.H" />
+    <ClInclude Include="..\..\..\BoxLib\IndexType.H" />
+    <ClInclude Include="..\..\..\BoxLib\IntVect.H" />
+    <ClInclude Include="..\..\..\BoxLib\Looping.H" />
+    <ClInclude Include="..\..\..\BoxLib\MultiFab.H" />
+    <ClInclude Include="..\..\..\BoxLib\Orientation.H" />
+    <ClInclude Include="..\..\..\BoxLib\ParallelDescriptor.H" />
+    <ClInclude Include="..\..\..\BoxLib\ParmParse.H" />
+    <ClInclude Include="..\..\..\BoxLib\PArray.H" />
+    <ClInclude Include="..\..\..\BoxLib\Pointers.H" />
+    <ClInclude Include="..\..\..\BoxLib\Profiler.H" />
+    <ClInclude Include="..\..\..\BoxLib\REAL.H" />
+    <ClInclude Include="..\..\..\BoxLib\SPACE.H" />
+    <ClInclude Include="..\..\..\BoxLib\SPACE_F.H" />
+    <ClInclude Include="..\..\..\BoxLib\SPECIALIZE_F.H" />
+    <ClInclude Include="..\..\..\BoxLib\Thread.H" />
+    <ClInclude Include="..\..\..\BoxLib\Tuple.H" />
+    <ClInclude Include="..\..\..\BoxLib\UseCount.H" />
+    <ClInclude Include="..\..\..\BoxLib\Utility.H" />
+    <ClInclude Include="..\..\..\BoxLib\VisMF.H" />
+    <ClInclude Include="..\..\..\BoxLib\winstd.H" />
+    <ClInclude Include="..\..\..\BoxLib\WorkQueue.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\BoxLib\Arena.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\BArena.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\BaseFab.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\BLProfiler.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\BLThread.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\BLWorkQueue.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\Box.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\BoxArray.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\BoxDomain.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\BoxLib.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\BoxList.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\CArena.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\DistributionMapping.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\FabArray.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\FabConv.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\FArrayBox.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\FPC.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\IndexType.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\IntVect.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\MultiFab.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\Orientation.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\ParallelDescriptor.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\ParmParse.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\UseCount.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\Utility.cpp" />
+    <ClCompile Include="..\..\..\BoxLib\VisMF.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\BoxLib\Banner.html" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
